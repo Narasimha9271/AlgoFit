@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algorithm Selector</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100">
+        <div class="container mx-auto py-8">
+            <h1 class="text-3xl font-bold mb-8">Algorithm Selector</h1>
+            <form
+                method="post"
+                action="/upload"
+                enctype="multipart/form-data"
+                class="flex items-center"
+            >
+                <input
+                    type="file"
+                    name="file"
+                    accept=".csv"
+                    class="border-gray-300 border rounded py-2 px-4 mr-4"
+                />
+                <input
+                    type="text"
+                    name="target_variable"
+                    placeholder="Enter Target Variable Name"
+                    class="border-gray-300 border rounded py-2 px-4 mr-4"
+                />
+                <button
+                    type="submit"
+                    class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200"
+                >
+                    Upload Dataset
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

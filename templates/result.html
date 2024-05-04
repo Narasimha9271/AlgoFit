@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algorithm Selection Result</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 p-8">
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mb-4">Algorithm Selection Result</h1>
+            <p class="mb-4 text-lg">
+                The recommended algorithm for the uploaded dataset is:
+                <strong>{{ selected_algorithm }}</strong>.
+            </p>
+            <div class="text-center mt-10">
+                <a
+                    href="/"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
+                    >Back</a
+                >
+            </div>
+        </div>
+    </body>
+</html>
